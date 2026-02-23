@@ -29,6 +29,7 @@ jobs:
 
       - name: Copy mod files into MDK
         run: |
+          rm -rf forge-mdk/src
           cp -r RandomEnchantsMod/src forge-mdk/
           cp RandomEnchantsMod/build.gradle forge-mdk/build.gradle
           cp RandomEnchantsMod/settings.gradle forge-mdk/settings.gradle
